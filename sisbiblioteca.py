@@ -30,6 +30,18 @@ class Usuario:
         livro = Livro()
         self.livros_emprestados.append(livro)
         livro.remover_exemplar(1)
-
     
-        
+    def devolver_livro(self, livro: Livro) -> None:
+        livro = Livro
+        self.livros_emprestados.append(livro)
+        livro.adicionar_exemplar(1)
+
+    def listar_emprestimos(self):
+        return self.livros_emprestados
+    
+class Biblioteca:
+    def __init__(self):
+        livro = []
+        usuario = []
+
+    def adicionar_livro()
